@@ -12,7 +12,7 @@
 
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <!-- Brand -->
+
     <a class="navbar-brand" href="#">Hotel Management System</a>
 
     <!-- Toggler/collapsibe Button -->
@@ -63,6 +63,12 @@
             <td th:text="${hotel.postCode}"></td>
             <td th:text="${hotel.city}"></td>
             <td th:text="${hotel.country}"></td>
+            <td>
+                <a th:href="@{/hotels/edit/{hotelCode}(hotelCode=${hotel.hotelCode})}"
+                class="btn btn-primary">Update</a>
+                <a th:href="@{/hotels/{hotelCode}(hotelCode=${hotel.hotelCode})}"
+                   class="btn btn-danger">Delete</a>
+            </td>
 
         </tr>
         </tbody>

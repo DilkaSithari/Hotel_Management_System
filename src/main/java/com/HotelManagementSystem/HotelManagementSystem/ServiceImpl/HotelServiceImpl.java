@@ -28,4 +28,19 @@ public class HotelServiceImpl implements HotelService {
     public Hotel saveHotel(Hotel hotel) {
         return hotelRepository.save(hotel);
     }
+
+    @Override
+    public Hotel getHotelById(Long hotelCode) {
+        return hotelRepository.findById(hotelCode).get();
+    }
+
+    @Override
+    public Hotel updateHotel(Hotel hotel) {
+        return hotelRepository.save(hotel );
+    }
+
+    @Override
+    public void deleteHotelById(Long hotelCode) {
+        hotelRepository.deleteById(hotelCode);
+    }
 }

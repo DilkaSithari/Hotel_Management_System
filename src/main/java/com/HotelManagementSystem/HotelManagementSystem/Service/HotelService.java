@@ -10,4 +10,9 @@ public interface HotelService {
     List<Hotel> getAllHotels();
 
     Hotel saveHotel(Hotel hotel);
+
+    Hotel getHotelById(Long hotelCode);
+    Hotel updateHotel(Hotel hotel);
+
+    void deleteHotelById(Long hotelCode);
 }
