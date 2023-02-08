@@ -41,7 +41,7 @@ public class  HotelController {
 
     }
     @PostMapping("hotels/{hotelCode}")
-    public String updateStudent(@PathVariable Long hotelCode,
+    public String updateHotel(@PathVariable Long hotelCode,
                                 @ModelAttribute("hotel") Hotel hotel,
                                 Model model){
         Hotel existingHotel = hotelService.getHotelById(hotelCode);

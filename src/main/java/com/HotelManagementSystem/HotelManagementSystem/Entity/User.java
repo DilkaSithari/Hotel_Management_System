@@ -5,6 +5,8 @@ package com.HotelManagementSystem.HotelManagementSystem.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
@@ -33,6 +35,7 @@ public class User {
         this.userName = userName;
         this.password = password;
     }
+
 
     public Long getUserId() {
         return userId;
